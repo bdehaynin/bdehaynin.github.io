@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career — Bastien</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a href="index.html" style="text-decoration:none;">
+      <span class="brand" style="color:var(--text)">Bastien</span>
+      <span class="brand-sub">TPM · Montréal → Tokyo</span>
+    </a>
+    <div style="margin-bottom:18px;">
+      <input id="search-input" onkeyup="runSearch(this.value)" placeholder="Search…"
+        style="width:100%;background:var(--bg-elev-2);border:1px solid var(--line);color:var(--text);
+        padding:7px 10px;border-radius:3px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;">
+      <div id="search-results" style="display:none;margin-top:6px;font-size:.85rem;
+        display:flex;flex-direction:column;gap:4px;"></div>
+    </div>
+    <div class="station-line">
+      <div class="station"><a href="index.html">Home</a><span class="station-meta">terminus</span></div>
+      <div class="station active"><a href="career.html">Career</a><span class="station-meta">TPM · games · fintech</span></div>
+      <div class="station"><a href="tokyo.html">Tokyo Move</a><span class="station-meta">relocation, in transit</span></div>
+      <div class="station"><a href="now.html">Now</a><span class="station-meta">currently</span></div>
+      <div class="station"><a href="contact.html">Contact</a><span class="station-meta">reach out</span></div>
+    </div>
+    <div class="sidebar-tools">
+      <button class="tool-btn" onclick="toggleTheme()">◐ theme</button>
+    </div>
+  </aside>
+
+  <main>
+    <div class="content">
+      <span class="eyebrow">Career</span>
+      <h1>What I've worked on</h1>
+      <p>
+        I'm a Technical Program Manager with a PMP certification and an MBA from ESG Paris (2018).
+        Across roles I've been the person translating between engineering reality and delivery
+        commitments — scoping, sequencing, and unblocking, rather than owning a single codebase.
+      </p>
+
+      <div class="card">
+        <span class="meta">2025 → present · Montréal</span>
+        <h3>Technical Program Manager — API People</h3>
+        <p>
+          API People is a 35-person studio building custom CRM systems for fintech and healthcare
+          clients. I run the program side: cross-team scheduling, scope tradeoffs with clients,
+          and keeping delivery honest when requirements shift mid-build.
+        </p>
+        <p><span class="tag">CRM</span><span class="tag">Fintech</span><span class="tag">Healthcare</span></p>
+      </div>
+
+      <div class="card">
+        <span class="meta">Earlier</span>
+        <h3>AAA game production</h3>
+        <p>
+          Program management inside large, multi-studio production pipelines — the kind of
+          environment where a single milestone slip cascades across a dozen dependent teams.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="meta">Earlier</span>
+        <h3>Distributed systems</h3>
+        <p>
+          Delivery on infrastructure-heavy efforts, where the program manager's job is mostly
+          making architectural tradeoffs visible to people who have to sign off on the schedule.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="meta">2018</span>
+        <h3>MBA — ESG Paris</h3>
+        <p>Business fundamentals underneath the program management practice.</p>
+      </div>
+
+      <hr class="divider">
+      <p style="font-size:.9rem;color:var(--text-dim);">
+        Full CV available on request — see <a href="contact.html">contact</a>.
+      </p>
+    </div>
+    <footer class="page-footer">
+      <span>Built by hand, not a CMS.</span>
+      <span>© 2026 Bastien</span>
+    </footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

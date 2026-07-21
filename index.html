@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bastien — Technical Program Manager</title>
+<meta name="description" content="Bastien, Technical Program Manager at API People, relocating to Tokyo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <a href="index.html" style="text-decoration:none;">
+      <span class="brand" style="color:var(--text)">Bastien</span>
+      <span class="brand-sub">TPM · Montréal → Tokyo</span>
+    </a>
+
+    <div style="margin-bottom:18px;">
+      <input id="search-input" onkeyup="runSearch(this.value)" placeholder="Search…"
+        style="width:100%;background:var(--bg-elev-2);border:1px solid var(--line);color:var(--text);
+        padding:7px 10px;border-radius:3px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;">
+      <div id="search-results" style="display:none;margin-top:6px;font-size:.85rem;
+        display:flex;flex-direction:column;gap:4px;"></div>
+    </div>
+
+    <div class="station-line">
+      <div class="station active"><a href="index.html">Home</a><span class="station-meta">terminus</span></div>
+      <div class="station"><a href="career.html">Career</a><span class="station-meta">TPM · games · fintech</span></div>
+      <div class="station"><a href="tokyo.html">Tokyo Move</a><span class="station-meta">relocation, in transit</span></div>
+      <div class="station"><a href="now.html">Now</a><span class="station-meta">currently</span></div>
+      <div class="station"><a href="contact.html">Contact</a><span class="station-meta">reach out</span></div>
+    </div>
+
+    <div class="sidebar-tools">
+      <button class="tool-btn" onclick="toggleTheme()">◐ theme</button>
+    </div>
+  </aside>
+
+  <main>
+    <div class="content">
+      <span class="eyebrow">Technical Program Manager</span>
+      <h1 style="font-size:2.1rem;">Hi, I'm Bastien 👋</h1>
+      <p>
+        I'm a PMP-certified Technical Program Manager currently based in Montréal, working at
+        <strong>API People</strong> on custom CRM systems for fintech and healthcare clients.
+        My background runs through AAA game production, distributed systems, and fintech —
+        I like the parts of a program where engineering complexity and delivery pressure meet.
+      </p>
+      <p>
+        In a few months I'm relocating to <strong>Tokyo</strong>. This site is half portfolio,
+        half public notebook for that move — the job search, the language study, and everything
+        in between.
+      </p>
+
+      <hr class="divider">
+
+      <span class="eyebrow">The route so far</span>
+      <div style="margin:16px 0 8px;">
+        <svg class="route-svg" viewBox="0 0 640 210" width="100%" role="img"
+          aria-label="Timeline: MBA ESG Paris 2018, AAA game production, distributed systems, fintech, API People 2025, Tokyo relocation 2026">
+          <line x1="20" y1="100" x2="430" y2="100" stroke="var(--amber)" stroke-width="4" />
+          <line x1="430" y1="100" x2="610" y2="100" stroke="var(--teal)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+
+          <!-- MBA -->
+          <circle cx="30" cy="100" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="3"/>
+          <text x="30" y="78" fill="var(--text)" font-size="12" text-anchor="middle">MBA · ESG Paris</text>
+          <text x="30" y="122" fill="var(--text-dim)" font-size="10" text-anchor="middle">2018</text>
+
+          <!-- AAA games -->
+          <circle cx="160" cy="100" r="6" fill="var(--bg)" stroke="var(--amber)" stroke-width="3"/>
+          <text x="160" y="78" fill="var(--text)" font-size="12" text-anchor="middle">AAA game production</text>
+
+          <!-- distributed systems -->
+          <circle cx="290" cy="100" r="6" fill="var(--bg)" stroke="var(--amber)" stroke-width="3"/>
+          <text x="290" y="122" fill="var(--text)" font-size="12" text-anchor="middle">Distributed systems</text>
+
+          <!-- API People -->
+          <circle cx="430" cy="100" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="3"/>
+          <text x="430" y="78" fill="var(--text)" font-size="12" text-anchor="middle">API People — fintech/health CRM</text>
+          <text x="430" y="122" fill="var(--text-dim)" font-size="10" text-anchor="middle">2025 → now</text>
+
+          <!-- Tokyo -->
+          <circle cx="610" cy="100" r="8" fill="var(--teal)" stroke="var(--teal)" stroke-width="3"/>
+          <text x="590" y="78" fill="var(--teal)" font-size="13" text-anchor="end" font-weight="600">Tokyo</text>
+          <text x="590" y="122" fill="var(--text-dim)" font-size="10" text-anchor="end">2026 · in transit</text>
+        </svg>
+      </div>
+      <p style="font-size:.9rem;color:var(--text-dim);">
+        Solid line: covered ground. Dashed line: the leg I'm on right now.
+      </p>
+
+      <hr class="divider">
+
+      <span class="eyebrow">Elsewhere</span>
+      <p>
+        <span class="tag">PMP certified</span>
+        <span class="tag">MBA · ESG Paris</span>
+        <span class="tag">Japanese N4 → N3</span>
+        <span class="tag">Program management</span>
+      </p>
+    </div>
+
+    <footer class="page-footer">
+      <span>Built by hand, not a CMS.</span>
+      <span>© 2026 Bastien</span>
+    </footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
