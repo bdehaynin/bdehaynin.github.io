@@ -11,11 +11,21 @@
   };
 
   const SEARCH_INDEX = [
-    { title: 'Home', url: 'index.html', text: 'Bastien technical program manager Montreal Tokyo API People CRM fintech healthcare' },
-    { title: 'Career', url: 'career.html', text: 'TPM AAA games distributed systems fintech PMP MBA ESG Paris API People' },
-    { title: 'Tokyo Move', url: 'tokyo.html', text: 'Tokyo relocation job search Sakana AI Rapyuta Robotics tokyodev Japanese N4 N3' },
-    { title: 'Now', url: 'now.html', text: 'currently working on job search language study personal finance NISA' },
-    { title: 'Contact', url: 'contact.html', text: 'contact email get in touch' }
+    { title: 'Home', url: '/index.html', text: 'Bastien technical program manager Montreal Tokyo API People CRM fintech healthcare AI' },
+    { title: 'Career', url: '/career.html', text: 'TPM AAA games distributed systems fintech PMP MBA ESG Paris API People' },
+    { title: 'Now', url: '/now.html', text: 'currently working on job search language study gym personal finance' },
+    { title: 'Contact', url: '/contact.html', text: 'contact email get in touch linkedin github' },
+    { title: 'Japan', url: '/japan/index.html', text: 'Japan relocation Tokyo dream move' },
+    { title: 'Moving to Tokyo', url: '/japan/moving.html', text: 'Tokyo relocation job search tokyodev English friendly TPM PM' },
+    { title: 'Japanese language', url: '/japan/language.html', text: 'JLPT N4 N3 Japanese study' },
+    { title: 'Projects', url: '/projects/index.html', text: 'personal projects side projects' },
+    { title: 'Divine Knockout successor', url: '/projects/dko.html', text: 'Unreal Engine spiritual successor Divine Knockout platform fighter game dev' },
+    { title: 'Gaming', url: '/gaming/index.html', text: 'gaming video games' },
+    { title: 'Backlog', url: '/gaming/backlog.html', text: 'game backlog picks currently playing' },
+    { title: 'Music', url: '/music/index.html', text: 'music guitar bass electronic' },
+    { title: 'Guitar and bass', url: '/music/guitar-bass.html', text: 'guitar bass playing music' },
+    { title: 'Notes', url: '/notes/index.html', text: 'notes digital garden' },
+    { title: 'Photos', url: '/photos/index.html', text: 'photos photography pictures' }
   ];
 
   window.runSearch = function (query) {

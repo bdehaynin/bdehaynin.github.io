@@ -222,6 +222,78 @@ footer.page-footer {
   main { padding: 32px 20px 80px; }
 }
 
-.route-svg text {
+.explorer {
+  margin-bottom: 20px;
+}
+.explorer-heading {
   font-family: 'IBM Plex Mono', monospace;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  display: block;
+}
+details.folder {
+  margin-bottom: 1px;
+}
+details.folder > summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: .88rem;
+  color: var(--text);
+  padding: 5px 4px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+details.folder > summary::-webkit-details-marker { display: none; }
+details.folder > summary::before {
+  content: '▸';
+  font-size: .7rem;
+  color: var(--text-dim);
+  transition: transform .15s ease;
+  display: inline-block;
+}
+details.folder[open] > summary::before { transform: rotate(90deg); }
+details.folder > summary:hover {
+  background: var(--bg-elev-2);
+  color: var(--teal);
+}
+details.folder > summary a {
+  color: inherit;
+  text-decoration: none;
+  flex: 1;
+}
+.folder-pages {
+  padding-left: 20px;
+  border-left: 1px solid var(--line);
+  margin-left: 9px;
+}
+.folder-pages a {
+  display: block;
+  font-size: .82rem;
+  color: var(--text-dim);
+  padding: 4px 0 4px 8px;
+}
+.folder-pages a:hover { color: var(--teal); text-decoration: none; }
+.folder-pages a.active { color: var(--amber); }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.gallery-grid .placeholder {
+  aspect-ratio: 1;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .7rem;
+  color: var(--text-dim);
 }
